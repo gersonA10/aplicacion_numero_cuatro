@@ -1,5 +1,6 @@
 import 'package:aplicacion_numero_cuatro/config/Theme/theme.dart';
 import 'package:aplicacion_numero_cuatro/presentation/providers/news_provider.dart';
+import 'package:aplicacion_numero_cuatro/presentation/screens/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/home',
         routes: {
           '/home': (context) => const HomePage(),
+          '/detail': (context) => const DetailPage(),
         },
         theme: ThemeApp().theme(),
       ),
